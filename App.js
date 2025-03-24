@@ -40,16 +40,25 @@
 
 */
 
-// const parent = React.createElement("div", {id:"parent"}, [
-//     React.createElement("div", {id:"child1"}, [React.createElement("h1",{},"I am child1 h1 tag"),
-//         React.createElement("h2",{}, "I am child1 h2 tag")
-//     ])
-// ], React.createElement("div", {id:"child2"}, [React.createElement("h1",{}, "I am child2 h1 tag"),
-//     React.createElement("h2", {}, "I am child2 h2 tag")
-// ]))
-// const root = ReactDOM.createRoot(document.getElementById("root"));
-// root.render(parent);
+import React from 'react';
+import ReactDOM from 'react-dom/client';
 
+
+const parent = React.createElement("div", {id:'parent'},[
+    React.createElement("div", {id:'child1', key: 'child1'},[
+            React.createElement('h1', {key: 'h1-child1'}, 'I am child1 h1 tag'),
+            React.createElement('h2', {key: 'h2-child1'}, 'I a child1 h2 tag')        
+    ]),
+
+    React.createElement("div", {id:'child2', key: 'child2'}, [
+        React.createElement('h1', {key: 'h1-child2'}, 'I a child2 h1 tag'),
+        React.createElement('h2', {key: 'h2-child'}, 'I a child2 h2 tag')
+    ])
+]
+)
+
+const root = ReactDOM.createRoot(document.getElementById('root'))
+root.render(parent);
 
 
 

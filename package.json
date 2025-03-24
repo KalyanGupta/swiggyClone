@@ -2,7 +2,6 @@
   "name": "swiggyclone",
   "version": "1.0.0",
   "description": "It is a swiggy clone project to revise my React Skills",
-  "main": "App.js",
   "scripts": {
     "test": "jest"
   },
@@ -22,5 +21,12 @@
   "homepage": "https://github.com/KalyanGupta/swiggyClone#readme",
   "devDependencies": {
     "parcel": "^2.14.2"
-  }
+  },
+  "dependencies": {
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "browserslist":[
+    "last 10 versions"
+  ]
 }
