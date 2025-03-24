@@ -1,0 +1,26 @@
+{
+  "name": "swiggyclone",
+  "version": "1.0.0",
+  "description": "It is a swiggy clone project to revise my React Skills",
+  "main": "App.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KalyanGupta/swiggyClone.git"
+  },
+  "keywords": [
+    "React",
+    "Swiggy"
+  ],
+  "author": "Narla Kalyan Gupta",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KalyanGupta/swiggyClone/issues"
+  },
+  "homepage": "https://github.com/KalyanGupta/swiggyClone#readme",
+  "devDependencies": {
+    "parcel": "^2.14.2"
+  }
+}
