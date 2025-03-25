@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "It is a swiggy clone project to revise my React Skills",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "start": "parcel Index.html",
+    "build": "parcel build Index.html"
   },
   "repository": {
     "type": "git",

@@ -1,64 +1,34 @@
-// const heading = React.createElement("h1", {id:"xyz"}, "Hello world from ReactJS usig standard practices");
-// const root = ReactDOM.createRoot(document.getElementById("root"));
-// root.render(heading);
-// console.log(heading)
-
-
-/*I want this HTML structure:
-
-<div id="parent">
-    <div id="child">
-        <h1>I am h1 tag</h1>
-    </div>
-</div>
-
-*/
-
-// const parent = React.createElement("div", {id: "parent"}, React.createElement(
-//     "div", {id:"child"}, React.createElement(
-//         "h1", {}, "I am h1 tag"
-//     )
-// ))
-// const root= ReactDOM.createRoot(document.getElementById("root"))
-// root.render(parent);
-// console.log(parent);
-
-
-/*I want this HTML structure:
-
-<div id="parent">
-    <div id="child1">
-        <h1>I am child1 h1 tag</h1>
-        <h2>I am child1 h2 tag</h2>
-    </div>
-
-    <div id="child2">
-        <h1>I am child2 h1 tag</h1>
-        <h2>I am child2 h2 tag</h2>
-    </div>
-</div>
-
-*/
-
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 
+const Title = (props) =>{
+    return(
 
-const parent = React.createElement("div", {id:'parent'},[
-    React.createElement("div", {id:'child1', key: 'child1'},[
-            React.createElement('h1', {key: 'h1-child1'}, 'I am child1 h1 tag'),
-            React.createElement('h2', {key: 'h2-child1'}, 'I a child1 h2 tag')        
-    ]),
+        <div>
+            {props.children}
+        </div>
+    )
+}
+const Main = () =>{
+    return(
+        <div>
+            <h1>Main component</h1>
+            <Title>
+                <h1>hello</h1>
+                <h2>hello</h2>
+                <h3>hello</h3>
+                <h4>hello</h4>
+                <h5>hello</h5>
+                <h6>hello</h6>
+            </Title>
+        </div>
+        
+    )
+}
+const root=ReactDOM.createRoot(document.getElementById('root'));
+root.render(<Main></Main>)
 
-    React.createElement("div", {id:'child2', key: 'child2'}, [
-        React.createElement('h1', {key: 'h1-child2'}, 'I a child2 h1 tag'),
-        React.createElement('h2', {key: 'h2-child'}, 'I a child2 h2 tag')
-    ])
-]
-)
 
-const root = ReactDOM.createRoot(document.getElementById('root'))
-root.render(parent);
 
 
 
