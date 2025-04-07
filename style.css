@@ -52,3 +52,15 @@
     display: flex;
     flex-wrap: wrap;
 }
+.filter-btn{
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: bold; 
+    background-color: lightgray;
+}
+.filter-btn:hover{
+    border: 1px solid black;
+    cursor: pointer;
+}
