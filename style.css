@@ -52,6 +52,9 @@
     display: flex;
     flex-wrap: wrap;
 }
+.search-filter{
+    display: flex;
+}
 .filter-btn{
     padding: 10px;
     margin: 10px;
@@ -64,3 +67,37 @@
     border: 1px solid black;
     cursor: pointer;
 }
+.search-bar{
+    padding: 10px;
+    margin: 5px;
+    border-radius: 10px;
+}
+.search-btn{
+    padding: 10px;
+    margin: 5px;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: bold; 
+    background-color: lightgray;
+}
+.search-btn:hover{
+    border: 1px solid black;
+    cursor: pointer;
+}
+.shimmer-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+.shimmer-card{
+    background-color: lightgray;
+    padding: 10px;
+    width: 180px;
+    height: 325px;
+    border-radius: 20px;
+    margin: 10px; 
+}
+.log-btn{
+    padding: 4px 8px;
+    cursor: pointer;
+}
+
